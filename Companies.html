@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+ <link rel="stylesheet" type="text/css" href="animate.css">
+ <link rel="stylesheet" type="text/css" href="bootstrap.css">
+ <link rel="stylesheet" type="text/css" href="paul.css">
+ <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<style>
+body {
+	font-family: 'Roboto', sans-serif;
+
+	}
+.modalDialog { 
+	position: fixed; 
+	font-family: Arial, 
+	Helvetica, sans-serif; 
+	top: 0; right: 0; 
+	bottom: 0; left: 0; 
+	background: rgba(0,0,0,0.8); 
+	z-index: 99999; 
+	opacity:0; 
+	-webkit-transition: opacity 400ms ease-in; 
+	-moz-transition: opacity 400ms ease-in; 
+	transition: opacity 400ms ease-in; 
+	pointer-events: none; 
+}
+.modalDialog:target { 
+	opacity:1; pointer-events: auto; 
+} 
+	.modalDialog > div { 
+		width: 400px; 
+		position: relative; 
+		margin: 10% auto; 
+		padding: 5px 20px 13px 20px; 
+		border-radius: 10px; 
+		background: #fff; 
+		background: -moz-linear-gradient(#fff, #999); 
+		background: -webkit-linear-gradient(#fff, #999); 
+		background: -o-linear-gradient(#fff, #999); 
+	}
+.close { 
+	background: #606061; 
+	color: #FFFFFF; 
+	line-height: 25px; 
+	position: absolute; 
+	right: -12px; 
+	text-align: center; 
+	top: -10px; 
+	width: 24px; 
+	text-decoration: none; 
+	font-weight: bold; 
+	-webkit-border-radius: 12px; 
+	-moz-border-radius: 12px; 
+	border-radius: 12px; 
+	-moz-box-shadow: 1px 1px 3px #000; 
+	-webkit-box-shadow: 1px 1px 3px #000; 
+	box-shadow: 1px 1px 3px #000; 
+} 
+	.close:hover { 
+		background: #00d9ff; 
+	}
+</style>
+<!-- NAV -->
+  <nav class="navbar navbar-custom" role="navigation">
+    <div class="cont" id="column">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-main-collapse">
+          <i class="fa fa-bars"></i>
+        </button>
+        </div>
+      <div class="navbar-collapse navbar-right navbar-main-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="page-scroll">
+            <a href="page2.html">Services</a>
+          </li>
+          <li class="page-scroll">
+            <a href="companies.html">Clients and Business Model</a>
+          </li>
+        </ul>
+      </div>
+    </div> <!-- END CONTAINER -->
+  </nav> <!-- END NAV -->
+</head>
+<body>
+<img src="logo.png">
+</head>
+<body>
+<div class="middleofpage"><h4><a href="http://www.businessinsider.com/amazon-cloud-bigger-than-microsoft-google-ibm-combined-2016-10">AWS is bigger than Google, Microsoft, and IBM combined.</a></h4></div>
+
+<p>As such, Amazon has clientele in the upper echelons of every industry...</p>
+<script type="text/javascript">
+	
+
+var i = 0; // Start point
+var images = [];
+var time = 3000;
+
+// Image List
+images[0] = 'images/bbc-logo.png';
+images[1] = 'images/discovery.png';
+images[2] = 'images/dropbox.png';
+images[3] = 'images/expedia.png';
+images[4] = 'images/htc.png';
+images[5] = 'images/mlb.png';
+images[6] = 'images/pbs.png';
+images[7] = 'images/reddit.png';
+images[8] = 'images/dropbox.png';
+images[9] = 'images/shell.jpeg';
+images[9] = 'images/more.jpg';
+
+// Change Image
+function changeImg(){
+document.slide.src = images[i];
+
+if(i < images.length - 1){
+i++;
+} else {
+i = 0;
+}
+
+setTimeout("changeImg()", time);
+}
+
+window.onload = changeImg;
+
+</script>
+
+<img name="slide" width="400" height="200">
+
+
+
+</script>
+</body>
+</html>

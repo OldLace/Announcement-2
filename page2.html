@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AWS Services</title>
+   <link rel="stylesheet" type="text/css" href="animate.css">
+   <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="paul.css">
+  
+
+
+  <!-- NAV -->
+  <nav class="navbar navbar-custom" role="navigation">
+    <div class="cont" id="column">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-main-collapse">
+          <i class="fa fa-bars"></i>
+        </button>
+        </div>
+      <div class="navbar-collapse navbar-right navbar-main-collapse collapse">
+        <ul class="nav navbar-nav">        
+          </li>
+          <li class="page-scroll">
+            <a href="slide_home.html">Home</a>
+          </li>
+          <li class="page-scroll">
+            <a href="companies.html">Clients and Business Model</a>
+          </li>
+        </ul>
+      </div>
+    </div> <!-- END CONTAINER -->
+  </nav> <!-- END NAV -->
+
+<style>
+#info_table {
+    position: absolute;
+    margin-left: 350px;
+    margin-top: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+#info_table td, #info_table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#info_table tr:nth-child(even){background-color: #e6ddec;}
+
+#info_table tr:hover {background-color: #ddd;}
+
+#info_table th {
+  padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4c5598;
+    color: whitesmoke;
+}
+#info_table th {
+    text-align: center;
+ }
+/*h3 {
+  position: absolute;
+  top-margin: 250px;*/
+ }
+</style>
+</head>
+<body>
+<img src="logo.png">
+<table id="info_table">
+  <tr>
+    <th>Service</th>
+    <th>Description</th>
+    </tr>
+  <tr>
+    <td>Simple Storage Service (S3)</td>
+    <td>Object based file storage; not for application installation. Dropbox uses this service</td>
+   </tr>
+  <tr>
+    <td>S3-Glacier</td>
+    <td>Archival storage, can take up to 5 hours to retrieve files; extremely low cost</td>
+   </tr>
+  <tr>
+    <td>Elastic Compute Cloud (EC2)</td>
+    <td>Virtual machines in the cloud</td>
+  </tr>
+  <tr>
+    <td>Elastic Beanstalk</td>
+    <td>Deploy code to the code; it handles ALL the infrastructure stuff automagically</td>
+  </tr>
+  <tr>
+    <td>Lambda</td>
+    <td> Serverless; upload your code and your code responses to events, every time you speak to an Amazon Echo or Alexa, it's actually Lambda</td>
+    </tr>
+  <tr>
+    <td>Cloudformation</td>
+    <td>allows repeatable environments, 
+you save what you want in a JSON file and it'll go ahead and create it for you, be it one server or a whole stack</td>
+  </tr>
+</table>
+
+</body>
+
+</html>
