@@ -102,29 +102,29 @@ body {
 <script type="text/javascript">
 	
 
-var j = 0; // Start point
+var i = 0; // Start point
 var images = [];
 var time = 3000;
 
 //List of Images for auto slideshow 
-images[0] = 'images/bbc-logo.png';
-images[1] = 'images/discovery.png';
-images[2] = 'images/dropbox.png';
-images[3] = 'images/expedia.png';
-images[4] = 'images/htc.png';
-images[5] = 'images/mlb.png';
-images[6] = 'images/pbs.png';
-images[7] = 'images/reddit.png';
-images[8] = 'images/dropbox.png';
-images[9] = 'images/shell.jpeg';
-images[9] = 'images/more.jpg';
+images[0] = "images/bbc-logo.png";
+images[1] = "images/discovery.png";
+images[2] = "images/dropbox.png";
+images[3] = "images/expedia.png";
+images[4] = "images/htc.png";
+images[5] = "images/mlb.png";
+images[6] = "images/pbs.png";
+images[7] = "images/reddit.png";
+images[8] = "images/dropbox.png";
+images[9] = "images/shell.jpeg";
+images[9] = "images/more.jpg";
 
 // Function to change images
 function changeImg(){
 document.slide.src = images[i];
 
-if(j < images.length - 1){
-j++;
+if(i < images.length - 1){
+i++;
 } else {
 j = 0;
 }
@@ -136,9 +136,7 @@ window.onload = changeImg;
 
 </script>
 
-<img id="slidey" name="slide" width="400" height="250">
-
-
+<img id="slidey" name="slide" width="400" height="200">
 
 </script>
 </body>
